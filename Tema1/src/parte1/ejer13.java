@@ -9,19 +9,21 @@ public class ejer13 {
 		boolean llueve;
 		boolean tarea;
 		boolean biblio;
-		String res1 = ("No puede salir");
-		String res2 = ("Puede salir");
-		
+		boolean res1;
+//Creamos nuestras variables y el escaner
 		System.out.println("¿Tiene que ir a la biblioteca?");
 		biblio = sc.nextBoolean();
 		System.out.println("¿Esta lloviendo?");
 		llueve = sc.nextBoolean();
 		System.out.println("¿Tiene tarea?");
 		tarea = sc.nextBoolean();
-		System.out.println(biblio ? res2 : (llueve ? res2 : (tarea ? res1 : res2)));
-		System.out.println(biblio&&llueve ? res2 : (llueve ? res2 : (tarea ? res1 : res2)));
-	System.out.println(biblio ?  : );
-	
+//Pedimos los datos y los asignamos a las variables		
+		res1 = biblio || (!llueve && !tarea);
+		System.out.println(res1 ? "Puede salir" : "No puede salir");
+
+//Utilizamos && y || para darle el valor al resultado y lo mostrmos en pantalla
+
+		sc.close();
 
 	}
 
