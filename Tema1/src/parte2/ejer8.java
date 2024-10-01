@@ -18,7 +18,7 @@ public class ejer8 {
 //Lo casteamos a entero para que no muestre los decimales sobrantes
 		System.out.println("Son " + l2 + " centimetros.");
 		sc.close();
-//Lo mostramos en pantalla y 
+//Lo mostramos en pantalla y cerramos el escaner
 	}
 
 }
