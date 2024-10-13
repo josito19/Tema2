@@ -12,7 +12,6 @@ public class ejer1 {
 		int cien;
 		int diez;
 		int u;
-
 //Solicitamos el número y lo asignamos a la variable		
 		System.out.println("Introduca un número del 0 al 9999:");
 		n = sc.nextInt();
@@ -20,10 +19,12 @@ public class ejer1 {
 		cien = (n / 100) % 10;
 		diez = (n / 10) % 10;
 		u = n % 10;
+//Tras calcular las unidades, decenas, centenas y milésimas, comprobamos que el número está dentro del rango deseado		
 		if (n >= 0 && n <= 9999) {
 			if (n >= 0 && n < 10) {
 				System.out.println("Un número de una cifra siempre será capicúo");
 			} else {
+//Números de una cifra siempre serán capicúos.Con dos cifras lo serán si decena = unidad				
 				if (n > 9 && n < 100) {
 
 					switch (n) {
@@ -40,6 +41,7 @@ public class ejer1 {
 					}
 
 				} else {
+//Con 3 cifras si centenas = unidades					
 					if (n > 99 && n < 1000) {
 
 						if (cien == u) {
@@ -49,6 +51,7 @@ public class ejer1 {
 						}
 
 					} else {
+//Con 4 cifras si milésimas = unidades y decenas = centenas						
 						if (n > 999 && n < 10000 && mil == u && diez == cien) {
 							System.out.println("Es capicúa");
 						} else {
