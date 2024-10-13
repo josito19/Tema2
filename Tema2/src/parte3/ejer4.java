@@ -1,4 +1,4 @@
-package deberes;
+package parte3;
 
 import java.util.Scanner;
 
@@ -19,6 +19,7 @@ public class ejer4 {
 		d = (n / 10) % n;
 //Comprobamos que está en el rango deseado		
 		if (n <= 99 && n >= 1) {
+//Asignamos a unidad sus nombres			
 			switch (u) {
 			case 1 -> uni = "uno";
 			case 2 -> uni = "dos";
@@ -30,6 +31,7 @@ public class ejer4 {
 			case 8 -> uni = "ocho";
 			case 9 -> uni = "nueve";
 			}
+//Lo mismo para decenas			
 			switch (d) {
 			case 1 -> dec = "dieci";
 			case 2 -> dec = "veinti";
@@ -41,6 +43,7 @@ public class ejer4 {
 			case 8 -> dec = "ochenta";
 			case 9 -> dec = "noventa";
 			}
+//Añadimos las excepciones necesarias			
 			if (n > 9 && n < 16 || u == 0) {
 				switch (n) {
 				case 0 -> System.out.println("Cero");
@@ -61,11 +64,13 @@ public class ejer4 {
 				}
 			} else {
 				if (n > 0 && n < 10) {
+//Si solo tiene una cifra así lo mostrará, sino lo escribirá bien					
 					System.out.println(uni);
 				} else {
 					System.out.println(dec + " y " + uni);
 				}
 			}
+//Si está fuera del rango número incorrecto			
 		} else {
 			System.out.println("Número incorrecto");
 		}

@@ -1,4 +1,4 @@
-package deberes;
+package parte3;
 
 import java.util.Scanner;
 
