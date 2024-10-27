@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class ejer8 {
 
 	public static void main(String[] args) {
-		//Creamos el escáner y las dos variables
+		// Creamos el escáner y las dos variables
 		Scanner sc = new Scanner(System.in);
-		//a será el primer número
+		// a será el primer número
 		int a;
-		//b será el segundo
+		// b será el segundo
 		int b;
-		//Solicitamos los números y los asignamos con el escáner
+		// Solicitamos los números y los asignamos con el escáner
 		System.out.println("Introduce dos números:");
 		a = sc.nextInt();
 		b = sc.nextInt();
@@ -27,6 +27,7 @@ public class ejer8 {
 			for (int i = b; i <= a; i++) {
 				System.out.println(i);
 			}
-		sc.close();
+			sc.close();
+		}
 	}
 }

@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class ejer1 {
 
 	public static void main(String[] args) {
+		//Creamos el escáner y las variables
 		Scanner sc = new Scanner(System.in);
 		int n;
 		int contador = 1;
