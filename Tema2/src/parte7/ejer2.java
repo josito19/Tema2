@@ -5,10 +5,11 @@ import java.util.Scanner;
 public class ejer2 {
 
 	public static void main(String[] args) {
+		// Creamos el escáner y las variables
 		Scanner sc = new Scanner(System.in);
 		int numero;
 		int primo = 0;
-
+		// Solicitamos el número y lo asignamos
 		System.out.println("Introduzca un número:");
 		numero = sc.nextInt();
 

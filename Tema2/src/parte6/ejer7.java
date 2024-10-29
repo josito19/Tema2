@@ -11,8 +11,6 @@ public class ejer7 {
 		int num;
 		//primo será el cálculo para saber si es primo o no
 		int primo;
-		//i será nuestro contador para el for
-		int i;
 		//veri será para identificar cuando son primos y cuando no
 		boolean veri = true;
 		//Solicitamos el número y lo asignamos a num con el escáner
@@ -20,7 +18,7 @@ public class ejer7 {
 		num = sc.nextInt();
 		//Irá dividiendo los números hasta dar con los que no tengan divisores que no 
 		//sean ellos mismos o 1
-		for (i = 2; i <= num - 1; i++) {
+		for (int i = 2; i <= num - 1; i++) {
 			primo = num % i;
 			if (primo == 0) {
 				//Cuando sea primo veri será false
